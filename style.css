@@ -1,97 +1,171 @@
+@font-face {
+	font-family: 'Karla';
+	src: url('./assets/Karla-Regular.ttf')
+}
+
+@font-face {
+	font-family: 'Futura';
+	src: url('./assets/FuturaMaxiCGBoldRegular.otf')
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+	font-family: 'Karla';
+	font-size: 16px;
+	/*line-height: 24px;
+	font-weight: 400;*/
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+	/*color-scheme: light dark;*/
+	/*color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);*/
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+	/*font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;*/
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+/*header*/
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+header {
+	margin: auto;
+	max-width: 1400px;
+	padding: 0 3em;
+	padding-top: 1em;
+	display: flex;
+	height: 5em;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+	flex: 1;
 }
 
-.card {
-  padding: 2em;
+.logo .container {
+	flex: 1;
+	width: 50%;
+	display: flex;
+	height: 100%;
 }
 
-.read-the-docs {
-  color: #888;
+.logo embed{
+	flex: 1;
+	height: 35em;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.navigation {
+	flex: 1; 
+	font-family: 'Futura';
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.navigation ul {
+	height: 100%;
+	padding: 0 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navigation ul li {
+	flex: 1;
+	text-align: center;
+	padding: 0 1em;
+}
+
+/*banner*/
+
+.banner {
+	height: 30em;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.banner .container {
+	width: 75%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner h3 {
+	font-family: 'Karla';
+	font-weight: 100;
+	margin-bottom: 1em;
+}
+
+.banner h1 {
+	font-family: 'Futura';
+	text-align: center;
+	font-size: 3em;
+}
+
+.highlight{
+	background: url('/assets/souligne.png') no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+}
+
+.banner .quote {
+	font-family: 'consolas';
+	font-weight: bolder;
+}
+
+/*portofolio*/
+
+.portofolio {
+	width: auto;
+	background-color: black;
+	color: white;
+}
+
+.portofolio .content{
+	margin: auto;
+	padding: 5em 0;
+	max-width: 1400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.portofolio img:not(.rivieras, .avnier, .mars) {
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(266deg) brightness(106%) contrast(101%);
+}
+
+.portofolio h3 {
+	margin-bottom: 2em;
+	font-family: 'Karla';
+	text-align: center;
+	font-weight: 100;
+}
+
+.portofolio .wrapper {
+	padding: 0 12em;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-auto-rows: 100px;
+}
+
+.portofolio .wrapper div, .yokosite{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.portofolio img {
+	width: 50%;
+}
+
+/*slider*/
+
+.slider img {
+	width: 100%;
 }
