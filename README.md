@@ -1,5 +1,16 @@
 # studio zerance test
 
+
+# INSTALLATION
+
+- git clone git@github.com:psemsari/zerancetest.git
+- cd zerancetest
+- npm install
+- npm run dev
+
+
+# DEROULEMENT
+
 # Preparation -  ~30 min
 
 ## techno utilise
@@ -114,6 +125,7 @@ j’ai du remettre le texte plusieurs fois pour que ça marche il doit y avoir u
 - j’ai eu un problème avec les multi évènement mais j’ai rapidement trouvé la solution
 
 [Add click event after another click event](https://stackoverflow.com/questions/33262256/add-click-event-after-another-click-event)
+
 
 # CONCLUSION:
 
