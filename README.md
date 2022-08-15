@@ -61,7 +61,7 @@ font face karla et futura
 
 [Caractères Spéciaux HTML](https://www.leptidigital.fr/productivite/caracteres-speciaux-html-2-19297/)
 
-- pour le surlignage, j’ai voulu utilisé l’élément after sur le texte mais j’ai eu du mal à l’utilisé.
+- pour le surlignage, j’ai voulu utilisé l’élément after sur le texte mais j’ai eu du mal à l’utiliser.
 j’ai donc simplement créé un background sur un élément span pour mettre mon image
 cela me permet aussi de réutiliser cette classe plus tard
 
