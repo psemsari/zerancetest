@@ -139,5 +139,6 @@ Je n'ai pas totalement fini.
 Je n’ai pas eu de problème pour la parti data fetching parce que je connais plutôt bien le système de promesse en JS.
 
 voici une image du temps que j'ai calculé avec toggl tracker
+
 ![image](https://user-images.githubusercontent.com/41895689/184680119-30d50077-9235-4f89-b074-6dbe28162a4c.png)
 
