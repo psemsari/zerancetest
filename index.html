@@ -6,10 +6,6 @@
 	<!--<link rel="icon" type="image/svg+xml" href="/vite.svg" />-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Zerance test</title>
-	<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,21 +17,21 @@
 			</div>
 			<nav class="navigation">
 				<ul>
-					<li>Nos Clients</li>
-					<li>Notre Ofrre</li>
-					<li>Le Studio</li>
+					<a href="#banner"><li>Nos Clients</li></a>
+					<a href="#portofolio"><li>Notre Ofrre</li></a>
+					<a href="#slider"><li>Le Studio</li></a>
 					<li>Contact</li>
 				</ul>
 			</nav>
 		</header>
-		<div class="banner">
+		<div class="banner" id="banner">
 			<div class="container">
 				<h3>SINCE 2016</h3>
 				<h1><span class="quote">&lsaquo;</span>We create from scratch<br>amazing <span
 						class="highlight">Shopify/<span class="quote">&rsaquo;</span></span></h1>
 			</div>
 		</div>
-		<div class="portofolio">
+		<div class="portofolio" id="portofolio">
 			<div class="content">
 				<h3>NOS CLIENTS SONT GÉNIAUX !</h3>
 				<div class="wrapper">
@@ -87,16 +83,21 @@
 				</div>
 			</div>
 		</div>
-		<div class="swiper">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide"><img src="/assets/Artboard_2.jpg" class=""></div>
-				<div class="swiper-slide"><img src="/assets/Artboard_1.jpg" class=""></div>
+		<div class="slider" id="slider">
+			<div class="slider-container">
+				<div class="slide1"><img src="/assets/Artboard_2.jpg" class=""></div>
+				<div class="slide2"><img src="/assets/Artboard_1.jpg" class=""></div>
 			</div>
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>
+		</div>
+		<div class="textinfinite">
+			<h2>
+				Qu’est ce qui est jaune et qui attend ? / Quand c’est trop, c’est Tropico / Frederic Diefental / Good cat Bad cat /&nbsp;
+			</h2>
+			<h2>Qu’est ce qui est jaune et qui attend ? / Quand c’est trop, c’est Tropico / Frederic Diefental / Good cat Bad cat /&nbsp;</h2>
+			
+			<h2>Qu’est ce qui est jaune et qui attend ? / Quand c’est trop, c’est Tropico / Frederic Diefental / Good cat Bad cat /&nbsp;</h2>
 		</div>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script type="module" src="/main.js"></script>
 </body>
 

@@ -166,6 +166,37 @@ header {
 
 /*slider*/
 
-.slider img {
-	width: 100%;
+.slider-wrapper {
+	width: 50%;
 }
+
+/*text infinite*/
+
+.textinfinite {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 3em;
+	font-family: 'Futura';
+	font-size: 1.2em;
+	color: white;
+	background-color: #ffcd1a;
+	text-align: center;
+	letter-spacing: 2px;
+	overflow: hidden;
+}
+
+.textinfinite h2 {
+	white-space: nowrap;
+	animation: animinfinite 10s linear infinite;
+}
+
+@keyframes animinfinite {
+	0% {
+	  transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(-100%, 0);
+	}
+  }
