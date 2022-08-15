@@ -14,21 +14,17 @@
 	list-style: none;
 }
 
+a {
+	text-decoration: none;
+}
+
+a:active, a:visited {
+	color: inherit;
+}
+
 :root {
 	font-family: 'Karla';
 	font-size: 16px;
-	/*line-height: 24px;
-	font-weight: 400;*/
-
-	/*color-scheme: light dark;*/
-	/*color: rgb(0, 0, 0);
-	background-color: rgb(255, 255, 255);*/
-
-	/*font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-size-adjust: 100%;*/
 }
 
 /*header*/
@@ -166,8 +162,64 @@ header {
 
 /*slider*/
 
-.slider-wrapper {
-	width: 50%;
+.swiper-slide-next {
+	transform: translate(-30%, 0) !important;
+}
+
+.swiper-slide-prev {
+	transform: translate(30%, 0) !important;
+}
+
+.swiper-slide{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.slide1 {
+	background-image: url(/assets/Artboard_2.jpg);
+	width: 100%;
+	height: 700px;
+}
+
+
+.slide2 {
+	background-image: url(/assets/Artboard_1.jpg);
+	width: 100%;
+	height: 700px;
+	background-repeat: no-repeat;
+}
+
+.card {
+	width: 400px;
+	height: 450px;
+	background-color: white;
+	text-align: center;
+}
+
+.card h3 {
+	font-family: 'Karla';
+	font-weight: 100;
+	margin-bottom: 1em;
+	margin: 10%;
+}
+
+.card img {
+	width: 40%;
+}
+
+.card p {
+	margin: 10%;
+}
+
+.card div {
+	font-family: 'Futura';
+	font-size: medium;
+}
+
+.swiper-button-next {
+	color: black;
+	transform: translate(-500%, 0) !important;
 }
 
 /*text infinite*/
@@ -199,4 +251,59 @@ header {
 	100% {
 		transform: translate(-100%, 0);
 	}
-  }
+}
+
+/*contact popup*/
+.openpop {
+	display: block !important;
+}
+
+.popup {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 40%;
+	height: 300px;
+	margin: auto;
+	background-color: beige;
+	box-shadow: 5px 5px 30px black;
+	padding: 5em;
+}
+
+.blur {
+	filter: blur(5px);
+}
+
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: #ffcd1a;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #ffcd1a;
+}
+
+@media (width: 300px) {
+	:root {
+		font-size: 8px;
+	}
+}

@@ -6,10 +6,30 @@
 	<!--<link rel="icon" type="image/svg+xml" href="/vite.svg" />-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Zerance test</title>
-	<link rel="stylesheet" href="style.css">
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<!--<link rel="stylesheet" href="style.css">-->
 </head>
 
 <body>
+	<div class="popup">
+		<form id="gender">
+			<label for="prenom">Prénom</label>
+			<input type="text" id="prenom" name="prenom" placeholder="prenom">
+		
+			<label for="mail">Mail</label>
+			<input type="text" id="mail" name="mail" placeholder="mail">
+
+			<label for="message">Message</label>
+			<input type="text" id="message" name="message" placeholder="message">
+			
+			<input type="submit" value="Valider">
+		</form>
+	</div>
 	<div id="app">
 		<header>
 			<div class="logo">
@@ -17,10 +37,10 @@
 			</div>
 			<nav class="navigation">
 				<ul>
-					<a href="#banner"><li>Nos Clients</li></a>
-					<a href="#portofolio"><li>Notre Ofrre</li></a>
-					<a href="#slider"><li>Le Studio</li></a>
-					<li>Contact</li>
+					<a href="/index.html#banner"><li>Nos Clients</li></a>
+					<a href="/index.html#portofolio"><li>Notre Ofrre</li></a>
+					<a href="/index.html#slider"><li>Le Studio</li></a>
+					<a id="btncontact"><li>Contact</li></a>
 				</ul>
 			</nav>
 		</header>
@@ -83,11 +103,26 @@
 				</div>
 			</div>
 		</div>
-		<div class="slider" id="slider">
-			<div class="slider-container">
-				<div class="slide1"><img src="/assets/Artboard_2.jpg" class=""></div>
-				<div class="slide2"><img src="/assets/Artboard_1.jpg" class=""></div>
+		<div class="swiper" id="slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide1">
+					<div class="card">
+						<h3>FROM SCRATCH /</h3>
+						<img src="/assets/seasonly.png" alt="">
+						<p>Développement site from scratch et d’un quiz personnalisé avec abonnement. Développement site from scratch et d’un quiz personnalisé avec abonnement.</p>
+						<div><span class="highlight">&lsaquo;Voir plus/&rsaquo;</span></div>
+					</div>
+				</div>
+				<div class="swiper-slide slide2">
+					<div class="card">
+						<h3>FROM SCRATCH /</h3>
+						<img src="/assets/seasonly.png" alt="">
+						<p>Développement site from scratch et d’un quiz personnalisé avec abonnement. Développement site from scratch et d’un quiz personnalisé avec abonnement.</p>
+						<div><span class="highlight">&lsaquo;Voir plus/&rsaquo;</span></div>
+					</div>
+				</div>
 			</div>
+			<div class="swiper-button-next"></div>
 		</div>
 		<div class="textinfinite">
 			<h2>
